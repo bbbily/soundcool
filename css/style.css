@@ -1,0 +1,86 @@
+.container {
+  font-family: 'Nunito', sans-serif;
+}
+.container p {
+  color: white;
+  letter-spacing: 1px;
+}
+.container li {
+  color: rgb(148, 149, 153);
+}
+.container a {
+  color: rgb(148, 149, 153);
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.container a:hover, .container li:hover {
+  color: white;
+}
+.main {
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: absolute;
+  top: 50px;
+  bottom: 80px;
+  width: 200px;
+  background-color: rgb(34, 35, 38);
+  box-shadow: -3px -3px 15px black;
+}
+
+/*.sidebar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}*/
+.sidebar > img {
+  margin: 20px;
+}
+.sidebar p {
+  margin: 20px;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.tag {
+  margin: 0 20px;
+  vertical-align: middle;
+}
+/*.queueHide {
+  background: rgb(34, 35, 38);
+  position: absolute;
+  right: -400px;
+  top: 50px;
+  bottom: 80px;
+  width: 400px;
+  transition: 1s;
+  display: none;
+  transform: translateX(100%);
+}*/
+.queueShow {
+  background: rgb(34, 35, 38);
+  position: absolute;
+  right: 0;
+  top: 50px;
+  bottom: 80px;
+  width: 400px;
+  display: none;
+  overflow-y: scroll;
+  /*transition: 1s;*/
+}
+.queueShow::-webkit-scrollbar {
+  background-color:  rgb(34, 35, 38);
+}
+.queueShow::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 58, 58);
+}

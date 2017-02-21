@@ -1,0 +1,9 @@
+<p class="queueTitle">tracks | artist</p>
+<ol>
+  <li class="queue" ng-repeat="track in tracks track by $index" ng-class="{highlight: (track.id == currentPlay.id)}">
+    <a class="listTitle" ng-click="playSong($index)">{{track.title}}</a>
+    <a class="listLike" ng-click="addLike(track)"><img src="images/favorite.png" alt="like"></a>
+    <a class="x" ng-click="removeTrack(track)">X</a>
+    <hr>
+  </li>
+</ol>

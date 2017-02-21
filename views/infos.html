@@ -1,0 +1,35 @@
+<topbar-dir></topbar-dir>
+<div class="view">
+  <nav>
+    <ul>
+      <li ui-sref="top">Top - 50</li>
+      <li ui-sref="likes">Likes</li>
+      <li ui-sref="playlists">Playlist</li>
+    </ul>
+  </nav>
+  <div class="info">
+    <img src="images/yaoming.jpg" alt="yaomong" ng-hide="track.artwork_url">
+    <img ng-src="{{track.artwork_url}}" alt="picture" ng-show="track.artwork_url">
+    <div class="infoDetail">
+      <p>{{track.title}}</p>
+      <p>Created: {{track.created_at.slice(0, 20)}}</p>
+    </div>
+    <div class="like">
+      <button ng-click="addLike(track)">Like</button>
+    </div>
+    <form class="message" ng-submit="addMessage(message)">
+      <input type="text" ng-model="message" class="txt">
+      <input type="submit" value="Send">
+    </form>
+  </div>
+  <p>Comments: ({{track.comments.length}})</p>
+  <div class="comments" ng-repeat="comment in track.comments track by $index">
+      <img ng-src="{{comment.url}}" alt="user">
+      <div class="comment">
+        <p>{{comment.user}}</p>
+        <p>{{comment.message}}</p>
+        <p>{{comment.date.toLocaleString()}}</p>
+      </div>
+  </div>
+</div>
+<player-dir></player-dir>

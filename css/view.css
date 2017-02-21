@@ -1,0 +1,234 @@
+
+topbar-dir {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(18, 19, 20);
+  box-shadow: 3px 3px 15px black;
+  z-index: 10;
+}
+.topbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.fa-bars {
+  display: none;
+}
+nav {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(34, 35, 38);
+  margin-bottom: 10px;
+  display: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 20px;
+}
+.genre {
+  overflow: hidden;
+  height: 40px;
+  transition: 1s;
+}
+.genre:hover {
+  height: 114px;
+  transition: 1s;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 17px;
+}
+.row div {
+  text-align: center;
+  border: 1px white solid;
+  width: 100%;
+  margin: 3px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.go {
+  width: 200px;
+  text-align: center;
+}
+.go a {
+  margin: 0 10px;
+}
+.search {
+  flex: 4;
+}
+.txt {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  background-color: transparent;
+  color: rgb(148, 149, 153);
+  font-size: 15px;
+  width: 80%;
+}
+.search a {
+  margin-left: -20px;
+}
+.social {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+}
+.social a {
+  margin: 0 10px;
+}
+.view {
+  height: calc(100vh - 150px);
+  overflow: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 50px;
+  bottom: 80px;
+  left: 200px;
+  right: 0;
+  /*width: 100% - 150px;*/
+  /*margin-left: 200px;*/
+  background-color: rgb(18, 19, 20);
+  /*min-height: 80vh;*/
+  padding-top: 20px;
+}
+.view::-webkit-scrollbar {
+  background-color:  rgb(34, 35, 38);
+}
+.view::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 58, 58);
+}
+.view > p {
+  margin-left: 20px;
+}
+.title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.block {
+  height: 50px;
+  display: block;
+}
+.tracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto 10px;
+  /*width: auto;*/
+}
+
+.track {
+  width: 200px;
+  margin: 10px;
+}
+
+.track > img {
+  width: 200px;
+  height: 200px;
+}
+.playlist {
+  margin: auto 10px;
+}
+.sref {
+  height: 40px;
+  overflow: hidden;
+  font-size: 20px;
+  cursor: pointer;
+}
+.duration2 {
+  text-align: right;
+}
+
+.info {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+.info img {
+  flex: 3;
+  width: 30%;
+  height: 30%;
+  margin: 0 20px;
+}
+.infoDetail {
+  flex: 5;
+}
+.infoDetail p:first-child {
+  font-size: 30px;
+}
+@media (max-width: 1050px) {
+  .infoDetail p:first-child {
+    font-size: 20px;
+  }
+}
+
+.like {
+  flex: 2;
+}
+.like button {
+  width: 130px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.message {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 50%;
+}
+
+.comments {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+  color: white;
+}
+.comments img {
+  height: 50px;
+  width: 50px;
+}
+.comment {
+  width: 93.5%;
+}
+.comments p {
+  /*font-size: 20px;*/
+  margin: 5px;
+  word-wrap: break-word;
+}
+.comment p:last-child {
+  text-align: right;
+}
+.queueTitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.queue {
+  margin: 20px 40px;
+}
+.listLike {
+  position: absolute;
+  right: 25px;
+
+}
+.x {
+  position: absolute;
+  right: 3px;
+}
+.highlight {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,165 @@
+player-dir {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(34, 35, 38);
+}
+
+#seekbar {
+  width: 99.5%;
+  -webkit-appearance: none;
+  outline: none;
+}
+#seekbar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 16px;
+  border-radius: 3px;
+  background: orange;
+  cursor: pointer;
+  margin: 0px;
+  margin-top: -3px;
+}
+#seekbar::-webkit-slider-runnable-track {
+  width: 100%;
+height: 5.8px;
+cursor: pointer;
+box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+background: rgb(78, 78,81);
+border-radius: 1.3px;
+border: 0.2px solid #010101;
+margin: 0px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.playerDetail {
+  display: flex;
+  flex: 7;
+}
+.miniPic {
+  margin-left: 10px;
+}
+.buttons {
+  flex: 3;
+}
+.buttons img {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+#volume {
+  position: absolute;
+  right: 70px;
+}
+.playerDetail div img {
+  height: 50px;
+  width: 50px;
+}
+.playerDetail p {
+  margin: 5px;
+}
+
+.volume {
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
+  width: 30px;
+  position: absolute;
+  top: -120px;
+  right: 70px;
+}
+@media (max-width: 850px) {
+  .infoDetail p {
+    font-size: 10px;
+  }
+  .like button {
+    width: 80px;
+    height: 30px;
+  }
+  .playerDetail {
+    flex: 5;
+  }
+  .buttons {
+    flex: 5;
+  }
+  .duration {
+    font-size: 10px;
+  }
+  .comment p {
+    font-size: 10px;
+  }
+  .track {
+    width: 150px;
+  }
+  .track > img {
+    width: 150px;
+    height: 150px;
+  }
+  .sref, .duration2 {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .queueShow {
+    width: 300px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+  .view {
+    left: 0;
+  }
+  .go {
+    flex: 3;
+  }
+  .search {
+    flex: 4;
+  }
+  .social {
+    flex: 2;
+  }
+  .social a {
+    margin: 3px;
+  }
+  .fa-bars {
+    display: inline;
+  }
+  .sref, .duration2 {
+    font-size: 10px;
+  }
+  .track {
+    width: 100px;
+  }
+  .track > img {
+    width: 100px;
+    height: 100px;
+  }
+  .infoDetail p:first-child {
+    font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .duration {
+    display: none;
+  }
+  .buttons {
+    flex: 8;
+  }
+  .playerDetail {
+    flex: 2;
+  }
+  .go a {
+    margin: 5px;
+  }
+}

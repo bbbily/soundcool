@@ -1,0 +1,18 @@
+<div class="tracks" ng-hide="filter">
+  <div ng-repeat="track in tracks" class="track">
+    <img src="images/yaoming.jpg" alt="yaoming" ng-click="playSong(name, $index)" ng-hide="track.artwork_url">
+    <img ng-src="{{track.artwork_url}}" alt="track" ng-click="playSong(name, $index)" ng-show="track.artwork_url">
+    <p ui-sref="infos({name: name, id: track.id})" class="sref">{{track.title}}</p>
+    <p class="duration2">{{songDuration(track.duration)}}</p>
+    <share-dir></share-dir>
+  </div>
+</div>
+<div class="tracks" ng-show="filter">
+  <div ng-repeat="track in data" class="track">
+    <img src="images/yaoming.jpg" alt="yaoming" ng-click="playSong(name, $index)" ng-hide="track.artwork_url">
+    <img ng-src="{{track.artwork_url}}" alt="track" ng-click="playSong(name, $index)" ng-show="track.artwork_url">
+    <p ui-sref="infos({name: name, id: track.id})" class="sref">{{track.title}}</p>
+    <p class="duration2">{{songDuration(track.duration)}}</p>
+    <share-dir></share-dir>
+  </div>
+</div>

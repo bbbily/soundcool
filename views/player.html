@@ -1,0 +1,31 @@
+<input type="range" id="seekbar" ng-model="seek" max="{{soundSvc.max}}" min="{{min}}" ng-click="goPosition(seek)">
+
+<div class="player">
+  <div class="playerDetail">
+    <div>
+      <img class="miniPic" src="/images/yaoming.jpg" alt="yaoming" ng-hide="currentPlay.artwork_url">
+      <img class="miniPic" ng-src="{{currentPlay.artwork_url}}" alt="ark" ng-show="currentPlay.artwork_url">
+    </div>
+    <div class="duration">
+      <p>{{currentPlay.title}}</p>
+      <p>{{currentPosition}} {{duration}}</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <a ng-click="prevSong()">
+      <img src="images/prev.png" alt="prev">
+    </a>
+    <a ng-click="togglePause()">
+      <img src="images/pause.png" alt="pause" ng-hide="notPlaying">
+      <img src="images/play.png" alt="play" ng-show="notPlaying">
+    </a>
+    <a ng-click="nextSong(name)">
+      <img src="images/next.png" alt="next">
+    </a>
+    <a class="listToggle"><img src="images/list.png" alt="list"></a>
+    <a ng-click="toggleVol()">
+      <img src="images/symbol.png" alt="volume" id="volume">
+    </a>
+    <input type="range" class="volume" min="0" max="100" ng-model="volume" ng-click="setVolume(volume)" ng-show="showVol">
+  </div>
+</div>
