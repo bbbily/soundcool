@@ -1,6 +1,6 @@
 angular.module("sound").service("soundSvc", function($http) {
-  var id = 'bda4ada8694db06efcac9cf97b872b3e';
-  url: "https://api.soundcloud.com/tracks.json?q=diddy&filter=streamable&client_id=bda4ada8694db06efcac9cf97b872b3e";
+  var id = config.id;
+  url: "https://api.soundcloud.com/tracks.json?q=diddy&filter=streamable&client_id=" + id;
 //   SC.initialize({
 //   client_id: 'bda4ada8694db06efcac9cf97b872b3e',
 //   redirect_uri: 'http://example.com/callback'
