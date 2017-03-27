@@ -28,6 +28,7 @@ angular.module("sound").directive("playerDir", function() {
     }
 
     getSound();
+    $scope.volume = 100;
     $scope.soundSvc = soundSvc;
     $scope.showVol = false;
     $scope.min = 0;
