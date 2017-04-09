@@ -131,6 +131,7 @@ nav ul {
 .track > img {
   width: 200px;
   height: 200px;
+  cursor: pointer;
 }
 .playlist {
   margin: auto 10px;
