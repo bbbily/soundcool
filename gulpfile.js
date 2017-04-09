@@ -3,7 +3,7 @@ const concat = require("gulp-concat");
 const babel = require("gulp-babel");
 
 gulp.task("js", function() {
-  gulp.src("./js/**/*.js")
+  gulp.src("./public/js/**/*.js")
   .pipe(babel({
     presets: ["es2015"]
   }))

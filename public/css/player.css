@@ -163,3 +163,17 @@ margin: 0px;
     margin: 5px;
   }
 }
+@media (max-width: 320px) {
+    .duration {
+      display: none;
+    }
+    .buttons {
+      flex: 8;
+    }
+    .playerDetail {
+      flex: 2;
+    }
+    .go a {
+      margin: 5px;
+    }
+}

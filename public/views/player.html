@@ -26,6 +26,6 @@
     <a ng-click="toggleVol()">
       <img src="images/symbol.png" alt="volume" id="volume">
     </a>
-    <input type="range" class="volume" min="0" max="100" ng-model="volume" ng-click="setVolume(volume)" ng-show="showVol">
+    <input type="range" class="volume" min="0" max="100" ng-model="volume" value="100" ng-change="setVolume(volume)" ng-show="showVol">
   </div>
 </div>
